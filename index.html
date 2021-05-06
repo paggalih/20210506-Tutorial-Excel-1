@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Sans" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <meta charset="utf-8">
     <title>Tutorial Sederhana</title>
     <style>
@@ -14,7 +15,8 @@
             /* padding-top: 20px; */
             padding-bottom: 40px;
             /* font-family: 'Fira Sans', sans-serif; */
-            font-family: 'Oswald', sans-serif;
+            /* font-family: 'Oswald', sans-serif; */
+            font-family: "Computer Modern Sans", sans-serif;
             /* font-family: 'Pacifico', serif; */
             /* text-shadow: 4px 4px 4px #aaa; */
         }
@@ -25,14 +27,14 @@
         }
         .container p{
             font-size: larger; 
-            /* line-height: 200px; */
+            /* line-height: 20px; */
         }
         .container h1{
             color: yellow;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
         .container figcaption{
-            text-align: center; margin-right: 15%; color: blue;
+            text-align: center; margin-right: 0%; color: blue;
         }
 
         .fixed-header, .fixed-footer{
@@ -60,10 +62,7 @@
         .fixed-footer a{
             margin-left: 20px;
         }
-        /* Some more styles to beutify this example */
-        nav {
-            /* margin-left: 10%; */
-        }
+
         nav a{
             /* color: #fff; */
             /* padding: 7px 25px; */
@@ -76,7 +75,7 @@
             position: fixed;
             display: flex;
             flex-flow: column;
-            justify-content: flex-start;
+            justify-content: flex-end;
             /* z-index: 1; */
             top: 0;
             left: 0;
@@ -95,6 +94,36 @@
             /* box-shadow: 5px 0px 5px 0px #003e7c; */
         }
 
+        .wrapper { 
+            background:#EFEFEF; 
+            box-shadow: 1px 1px 10px #999; 
+            margin: auto; 
+            text-align: center; 
+            position: relative;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin-bottom: 20px !important;
+            width: 80%;
+            padding-top: 5px;            
+        }
+        .scrolls { 
+            overflow-x: scroll;
+            overflow-y: scroll;
+            height: 200px;
+            white-space:nowrap
+        } 
+        .imageDiv img { 
+            box-shadow: 1px 1px 10px #999; 
+            margin: 2px;
+            max-height: 50px;
+            cursor: pointer;
+            display:inline-block;
+            *display:inline;
+            *zoom:1;
+            vertical-align: top;
+        }
+
     /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -105,10 +134,16 @@
     <div class="container">
         <h1>TUTORIAL EXCEL</h1><h2>Cara Mendapatkan Banyaknya Huruf dalam Kata</h2>
 
+
         <!-- Image diunggah ke devianart -->
         <figure>
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24652920-f82d-4289-ae61-8cae14177651/dej3g0w-edf04614-e8d2-4f2f-b104-010341562fcb.png/v1/fill/w_1280,h_132,q_80,strp/excel1_by_ganfk_dej3g0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyIiwicGF0aCI6IlwvZlwvMjQ2NTI5MjAtZjgyZC00Mjg5LWFlNjEtOGNhZTE0MTc3NjUxXC9kZWozZzB3LWVkZjA0NjE0LWU4ZDItNGYyZi1iMTA0LTAxMDM0MTU2MmZjYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.rE0m7nL9ZQIPD2-M6vrdBi5LTlkhYyGqzbQYIdyMiE8" alt="" title="ganteng">
-            <figcaption style="">Gambar 1: Contoh cell excel.</figcaption>
+            <div class="wrapper">
+                <div class="scrolls">
+                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24652920-f82d-4289-ae61-8cae14177651/dej3g0w-edf04614-e8d2-4f2f-b104-010341562fcb.png/v1/fill/w_1280,h_132,q_80,strp/excel1_by_ganfk_dej3g0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyIiwicGF0aCI6IlwvZlwvMjQ2NTI5MjAtZjgyZC00Mjg5LWFlNjEtOGNhZTE0MTc3NjUxXC9kZWozZzB3LWVkZjA0NjE0LWU4ZDItNGYyZi1iMTA0LTAxMDM0MTU2MmZjYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.rE0m7nL9ZQIPD2-M6vrdBi5LTlkhYyGqzbQYIdyMiE8" height="180px" title="ganteng">                
+                    </div>
+                </div>
+            
+            <figcaption >Gambar 1: Contoh cell excel.</figcaption>
         </figure>
         <ol>
             <li> Pertama tulis dulu kata yang ingin diekstrak banyak hurufnya pada suatu cell di excel. Pada gambar di atas, saya tuliskan kata yang ingin saya ekstrak pada cell A1(atau a1) dan A4(atau a4).</li>

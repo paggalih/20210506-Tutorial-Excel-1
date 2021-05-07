@@ -14,11 +14,13 @@
         body{        
             /* padding-top: 20px; */
             padding-bottom: 40px;
+            padding-left: 20px;
             /* font-family: 'Fira Sans', sans-serif; */
             /* font-family: 'Oswald', sans-serif; */
             font-family: "Computer Modern Sans", sans-serif;
             /* font-family: 'Pacifico', serif; */
             /* text-shadow: 4px 4px 4px #aaa; */
+            /* margin-left: 10px; */
         }
 
         .container{
@@ -72,26 +74,31 @@
         .sidenav {
             height: 100%;
             width: 10%;
-            position: fixed;
+            position: absolute;
             display: flex;
+            /* flex-direction: column; */
             flex-flow: column;
-            justify-content: flex-end;
-            /* z-index: 1; */
+            justify-content: flex-start;
+            /* align-items: center; */
+            z-index: 1;
             top: 0;
             left: 0;
             background-color: rgb(255, 255, 255);
             /* overflow-x: hidden; */
             /* padding-top: 60px; */
+            overflow-y: scroll;
+            margin: auto;
+            vertical-align: middle;
         }
 
-        .sidenav img {
-            padding: 5px 5px 5px 5px;
-            text-decoration: none;
-            /* font-size: 25px; */
-            /* color: #818181; */
-            display: block;
-            margin-left: 20%;
-            /* box-shadow: 5px 0px 5px 0px #003e7c; */
+        .sidenav a{
+            width: 100%;
+            /* position: absolute; */
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-top: 20px;
+
         }
 
         .wrapper { 
@@ -156,7 +163,7 @@
         <figure>
             <div class="wrapper">
                 <div class="scrolls">
-                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24652920-f82d-4289-ae61-8cae14177651/dej3g0w-edf04614-e8d2-4f2f-b104-010341562fcb.png/v1/fill/w_1280,h_132,q_80,strp/excel1_by_ganfk_dej3g0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyIiwicGF0aCI6IlwvZlwvMjQ2NTI5MjAtZjgyZC00Mjg5LWFlNjEtOGNhZTE0MTc3NjUxXC9kZWozZzB3LWVkZjA0NjE0LWU4ZDItNGYyZi1iMTA0LTAxMDM0MTU2MmZjYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.rE0m7nL9ZQIPD2-M6vrdBi5LTlkhYyGqzbQYIdyMiE8" height="180px" title="ganteng">                
+                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/24652920-f82d-4289-ae61-8cae14177651/dej3g0w-edf04614-e8d2-4f2f-b104-010341562fcb.png/v1/fill/w_1280,h_132,q_80,strp/excel1_by_ganfk_dej3g0w-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyIiwicGF0aCI6IlwvZlwvMjQ2NTI5MjAtZjgyZC00Mjg5LWFlNjEtOGNhZTE0MTc3NjUxXC9kZWozZzB3LWVkZjA0NjE0LWU4ZDItNGYyZi1iMTA0LTAxMDM0MTU2MmZjYi5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.rE0m7nL9ZQIPD2-M6vrdBi5LTlkhYyGqzbQYIdyMiE8" height="180px">                
                     </div>
                 </div>
             
@@ -174,7 +181,7 @@
                 </ol></li> 
                 <li><span class="realistic-marker-highlight">SELESAI</span></li>
         </ol>
-        <div class="fixed-footer">
+        <!-- <div class="fixed-footer">
             <nav>
                 <a href="https://paggalih.github.io"><button>Beranda</button></a>
                 <a href="https://paggalih.github.io/video"><button>Video</button></a>
@@ -183,14 +190,26 @@
                 <a href="https://paggalih.github.io/tutorial"><button>Tutorial</button></a>
 
             </nav>       
-        </div>
+        </div> -->
     </div>
     
     <div class="sidenav">
-        <img src="https://seeklogo.com/images/I/iain-tulungagung-logo-857B412A10-seeklogo.com.png" alt="" width=50% >
-        <img src="https://ditsti.itb.ac.id/wp-content/uploads/2020/09/logo_itb_512.png" alt="" width=50% >
-        <img src="http://3.bp.blogspot.com/_-NbUYf-lkLI/TJn5nG5bNwI/AAAAAAAAAnM/FwCjfKo9T9o/s1600/logo+sragen+bilingual+boarding+school.jpg" alt="" width=50% >
-        <img src="https://smpn1trenggalek.sch.id/wp-content/uploads/2018/11/smp1trenggalek.jpg" alt="" width=50% >
+        <a href="febi.iain-tulungagung.ac.id"><img src="https://seeklogo.com/images/I/iain-tulungagung-logo-857B412A10-seeklogo.com.png" alt="" width=50% ></a>
+
+        <a href="math.itb.ac.id"><img src="https://ditsti.itb.ac.id/wp-content/uploads/2020/09/logo_itb_512.png" alt="" width=50% ></a>
+
+        <a href="#"><img src="http://3.bp.blogspot.com/_-NbUYf-lkLI/TJn5nG5bNwI/AAAAAAAAAnM/FwCjfKo9T9o/s1600/logo+sragen+bilingual+boarding+school.jpg" alt="" width=50% ></a>
+
+        <a href="https://smpn1trenggalek.sch.id"><img src="https://smpn1trenggalek.sch.id/wp-content/uploads/2018/11/smp1trenggalek.jpg" alt="" width=50% ></a>
+
+        <!-- <a href="https://i1.rgstatic.net/ii/profile.image/736166504566784-1552527180154_Q512/Galih-Pradananta.jpg"><img src="https://www.flaticon.com/svg/vstatic/svg/4412/4412398.svg?token=exp=1620350106~hmac=0cb97698205cc3cdd06771a101d20584" style="width: 50%;" alt=""></a>
+        <span style="text-align: center;">Tutorial</span> -->
+            
+        <a href="https://i1.rgstatic.net/ii/profile.image/736166504566784-1552527180154_Q512/Galih-Pradananta.jpg"><img src="https://cdn.icon-icons.com/icons2/624/PNG/512/About_Us-80_icon-icons.com_57384.png" width="50%" alt=""></a>
+
+
+        <a href="https://paggalih.github.io"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="50%" height="auto" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path fill="#E8EAF6" d="M42 39H6V23L24 6l18 17z"/><g fill="#C5CAE9"><path d="M39 21l-5-5V9h5z"/><path d="M6 39h36v5H6z"/></g><path fill="#B71C1C" d="M24 4.3L4 22.9l2 2.2L24 8.4l18 16.7l2-2.2z"/><path fill="#D84315" d="M18 28h12v16H18z"/><path fill="#01579B" d="M21 17h6v6h-6z"/><path fill="#FF8A65" d="M27.5 35.5c-.3 0-.5.2-.5.5v2c0 .3.2.5.5.5s.5-.2.5-.5v-2c0-.3-.2-.5-.5-.5z"/></svg>
+
     </div> 
   
 </body>

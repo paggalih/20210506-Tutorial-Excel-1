@@ -7,7 +7,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
     <meta charset="utf-8">
-    <title>Tutorial Sederhana</title>
+    <title>TUTORIAL EXCEL Cara Mendapatkan Banyaknya Huruf dalam Kata</title>
     <style>
         /* Add some padding on document's body to prevent the content
         to go underneath the header and footer */
@@ -124,6 +124,24 @@
             vertical-align: top;
         }
 
+        .realistic-marker-highlight{
+            position:relative;
+        }
+        .realistic-marker-highlight:before{
+            content:"";
+            background-color:rgba(255, 255, 0, 0.5);
+            width:100%;
+            height:1.5em;
+            position:absolute;
+            z-index:-2;
+            filter:url(#marker-shape);
+            left:-0.25em;
+            top:-0.25em;
+            padding: 0em 0.25em 0em;
+
+        }
+
+
     /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -132,8 +150,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>TUTORIAL EXCEL</h1><h2>Cara Mendapatkan Banyaknya Huruf dalam Kata</h2>
-
+        <h1>TUTORIAL EXCEL</h1><h2><span class="realistic-marker-highlight">Cara Mendapatkan Banyaknya Huruf dalam Kata</span></h2>
 
         <!-- Image diunggah ke devianart -->
         <figure>
@@ -147,15 +164,15 @@
         </figure>
         <ol>
             <li> Pertama tulis dulu kata yang ingin diekstrak banyak hurufnya pada suatu cell di excel. Pada gambar di atas, saya tuliskan kata yang ingin saya ekstrak pada cell A1(atau a1) dan A4(atau a4).</li>
-            <li> Selanjutnya jika ingin menghitung banyaknya a kecil pada kata yang terletak di cell A1 gunakan rumus <br><button style="align-content: center;">=len(a1)-len(substitute(a1,"a",""))</button><br>
+            <li> Selanjutnya jika ingin menghitung banyaknya a kecil pada kata yang terletak di cell A1 gunakan rumus  <span class="realistic-marker-highlight">=len(a1)-len(substitute(a1,"a",""))</span><br>
                 Keterangan:
                 <ol style="list-style: lower-latin;">
-                    <li>	Rumus <button>len(a1)</button> akan menghasilkan banyaknya huruf yang ada pada kata di cell A1 termasuk spasi. Selanjutnya huruf, angka, spasi, tanda baca, dsb akan kita sebut sebagai karakter. Maka seperti contoh pada cell B2, banyaknya huruf (dan spasi) pada kata “Galih Pradananta” adalah 16.</li>
-                    <li>	Rumus <button>substitute(a1,"a","")</button>  akan mengganti huruf a kecil pada cell A1 dengan karakter kosong atau dengan kata lain menghilangkan huruf a kecil pada kata. Sehingga menghasilkan “Glih Prdnnt” seperti tertera pada cell D2.</li>
-                    <li>	Rumus <button>len(substitute(a1,"a",""))</button>   menghitung banyaknya huruf pada kata yang telah terkena fungsi substitute.</li>
+                    <li>	Rumus <span class="realistic-marker-highlight">len(a1)</span> akan menghasilkan banyaknya huruf yang ada pada kata di cell A1 termasuk spasi. Selanjutnya huruf, angka, spasi, tanda baca, dsb akan kita sebut sebagai karakter. Maka seperti contoh pada cell B2, banyaknya huruf (dan spasi) pada kata “Galih Pradananta” adalah 16.</li>
+                    <li>	Rumus <span class="realistic-marker-highlight">substitute(a1,"a","")</span>  akan mengganti huruf a kecil pada cell A1 dengan karakter kosong atau dengan kata lain menghilangkan huruf a kecil pada kata. Sehingga menghasilkan “Glih Prdnnt” seperti tertera pada cell D2.</li>
+                    <li>	Rumus <span class="realistic-marker-highlight">len(substitute(a1,"a",""))</span>  menghitung banyaknya huruf pada kata yang telah terkena fungsi substitute.</li>
                     <li> Terakhir pada cel E2, tinggal dikurangi antara kata yang masih ada a kecilnya dengan kata yang telah dihilangkan a kecilnya untuk menghitung banyaknya a kecil.</li>
                 </ol></li> 
-                <li>SELESAI</li>
+                <li><span class="realistic-marker-highlight">SELESAI</span></li>
         </ol>
         <div class="fixed-footer">
             <nav>
